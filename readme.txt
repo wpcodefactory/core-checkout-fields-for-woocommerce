@@ -1,8 +1,8 @@
 === Core Checkout Fields for WooCommerce ===
-Contributors: algoritmika, anbinder
+Contributors: wpcodefactory, algoritmika, anbinder
 Tags: woocommerce, checkout, core, field, woo commerce
 Requires at least: 4.4
-Tested up to: 5.3
+Tested up to: 6.1
 Stable tag: 1.1.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -44,14 +44,16 @@ Customize core (i.e. standard) WooCommerce checkout fields.
 
 * **Disable/enable** the field.
 * Set if field is **required**.
-* Change field's **label**, **placeholder** and/or **description**.
-* Set field's **style**.
+* Change field's **label**.
+* Set field's **placeholder**
+* Set field's **description**.
+* Change field's **style**.
 
 = Premium Version =
 
 With [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/core-checkout-fields-for-woocommerce/) version you can also:
 
-* Change field's **position (i.e. priority)**.
+* Change field's **position** (i.e. priority).
 * Set field's **product visibility**: hide/show field depending on which products (categories and/or tags) are in the cart.
 
 = Feedback =
@@ -66,6 +68,12 @@ With [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/core-
 3. Start by visiting plugin settings at "WooCommerce > Settings > Core Checkout Fields".
 
 == Changelog ==
+
+= 1.2.0 - 11/11/2022 =
+* Tested up to: 6.1.
+* WC tested up to: 7.1.
+* Readme.txt updated.
+* Deploy script added.
 
 = 1.1.0 - 27/12/2019 =
 * Dev - Admin settings descriptions updated; "Your settings have been reset" notice added.

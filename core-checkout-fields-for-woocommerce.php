@@ -3,15 +3,12 @@
 Plugin Name: Core Checkout Fields for WooCommerce
 Plugin URI: https://wpfactory.com/item/core-checkout-fields-for-woocommerce/
 Description: Customize core (i.e. standard) WooCommerce checkout fields.
-Version: 1.1.0
-Author: Algoritmika Ltd
-Author URI: https://algoritmika.com
+Version: 1.2.0-dev
+Author: WPFactory
+Author URI: https://wpfactory.com
 Text Domain: core-checkout-fields-for-woocommerce
 Domain Path: /langs
-Copyright: © 2019 Algoritmika Ltd.
-WC tested up to: 3.8
-License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+WC tested up to: 7.1
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -33,7 +30,7 @@ final class Alg_WC_Core_Checkout_Fields {
 	 * @var   string
 	 * @since 1.0.0
 	 */
-	public $version = '1.1.0';
+	public $version = '1.2.0-dev-20221111-2227';
 
 	/**
 	 * @var   Alg_WC_Core_Checkout_Fields The single instance of the class

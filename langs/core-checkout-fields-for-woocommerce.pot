@@ -1,8 +1,8 @@
-#: core-checkout-fields-for-woocommerce.php:155
+#: core-checkout-fields-for-woocommerce.php:152
 msgid "Settings"
 msgstr ""
 
-#: core-checkout-fields-for-woocommerce.php:158
+#: core-checkout-fields-for-woocommerce.php:155
 msgid "Unlock All"
 msgstr ""
 
