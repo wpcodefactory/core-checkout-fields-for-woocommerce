@@ -1,8 +1,45 @@
-#: core-checkout-fields-for-woocommerce.php:152
-msgid "Settings"
+# Copyright (C) 2022 WPFactory
+# This file is distributed under the same license as the Core Checkout Fields for WooCommerce Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: core-checkout-fields-for-woocommerce 1.2.0-dev\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/core-checkout-fields-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-11-13T20:52:54+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: core-checkout-fields-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:142
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:163
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:177
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:191
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:205
+msgid "Core Checkout Fields for WooCommerce Pro"
 msgstr ""
 
-#: core-checkout-fields-for-woocommerce.php:155
+#. Plugin URI of the plugin
+msgid "https://wpfactory.com/item/core-checkout-fields-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Customize core (i.e. standard) WooCommerce checkout fields."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPFactory"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpfactory.com"
+msgstr ""
+
+#: core-checkout-fields-for-woocommerce-pro.php:155
 msgid "Unlock All"
 msgstr ""
 
@@ -169,16 +206,7 @@ msgid "Leave zero for WooCommerce defaults."
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:140
-#, php-format
 msgid "You will need %s plugin to set priority."
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:142
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:163
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:177
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:191
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:205
-msgid "Core Checkout Fields for WooCommerce Pro"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:153
@@ -190,13 +218,10 @@ msgid "Include product categories"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:159
-msgid ""
-"If not empty - selected categories products must be in the cart for current "
-"field to appear."
+msgid "If not empty - selected categories products must be in the cart for current field to appear."
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:161
-#, php-format
 msgid "You will need %s plugin to set included categories."
 msgstr ""
 
@@ -205,13 +230,10 @@ msgid "Exclude product categories"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:173
-msgid ""
-"If not empty - current field is hidden, if selected categories products are "
-"in the cart."
+msgid "If not empty - current field is hidden, if selected categories products are in the cart."
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:175
-#, php-format
 msgid "You will need %s plugin to set excluded categories."
 msgstr ""
 
@@ -220,13 +242,10 @@ msgid "Include product tags"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:187
-msgid ""
-"If not empty - selected tags products must be in the cart for current field "
-"to appear."
+msgid "If not empty - selected tags products must be in the cart for current field to appear."
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:189
-#, php-format
 msgid "You will need %s plugin to set included tags."
 msgstr ""
 
@@ -235,13 +254,10 @@ msgid "Exclude product tags"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:201
-msgid ""
-"If not empty - current field is hidden, if selected tags products are in the "
-"cart."
+msgid "If not empty - current field is hidden, if selected tags products are in the cart."
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:203
-#, php-format
 msgid "You will need %s plugin to set excluded tags."
 msgstr ""
 
@@ -301,9 +317,7 @@ msgid "Enable"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:89
-msgid ""
-"Enable this if you are having theme related issues with \"Position (i.e. "
-"priority)\" options."
+msgid "Enable this if you are having theme related issues with \"Position (i.e. priority)\" options."
 msgstr ""
 
 #: includes/settings/class-alg-wc-settings-core-checkout-fields.php:24
