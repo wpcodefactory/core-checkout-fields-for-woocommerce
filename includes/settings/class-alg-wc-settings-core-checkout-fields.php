@@ -2,12 +2,13 @@
 /**
  * Core Checkout Fields for WooCommerce - Settings
  *
- * @version 1.1.0
+ * @version 1.2.0
  * @since   1.0.0
+ *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Settings_Core_Checkout_Fields' ) ) :
 
@@ -16,19 +17,26 @@ class Alg_WC_Settings_Core_Checkout_Fields extends WC_Settings_Page {
 	/**
 	 * Constructor.
 	 *
-	 * @version 1.0.0
+	 * @version 1.2.0
 	 * @since   1.0.0
 	 */
 	function __construct() {
 		$this->id    = 'alg_wc_core_checkout_fields';
 		$this->label = __( 'Core Checkout Fields', 'core-checkout-fields-for-woocommerce' );
 		parent::__construct();
+		// Sections
+		require_once( 'class-alg-wc-core-checkout-fields-settings-section.php' );
+		require_once( 'class-alg-wc-core-checkout-fields-settings-general.php' );
+		require_once( 'class-alg-wc-core-checkout-fields-settings-field.php' );
+		foreach ( alg_wc_core_checkout_fields()->core->get_fields() as $field_id => $field_title ) {
+			new Alg_WC_Core_Checkout_Fields_Settings_Field( $field_id, $field_title );
+		}
 	}
 
 	/**
 	 * get_settings.
 	 *
-	 * @version 1.1.0
+	 * @version 1.2.0
 	 * @since   1.0.0
 	 */
 	function get_settings() {
@@ -42,6 +50,7 @@ class Alg_WC_Settings_Core_Checkout_Fields extends WC_Settings_Page {
 			array(
 				'title'     => __( 'Reset section settings', 'core-checkout-fields-for-woocommerce' ),
 				'desc'      => '<strong>' . __( 'Reset', 'core-checkout-fields-for-woocommerce' ) . '</strong>',
+				'desc_tip'  => __( 'Check the box and save changes to reset.', 'core-checkout-fields-for-woocommerce' ),
 				'id'        => $this->id . '_' . $current_section . '_reset',
 				'default'   => 'no',
 				'type'      => 'checkbox',

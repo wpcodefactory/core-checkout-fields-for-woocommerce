@@ -3,17 +3,17 @@ Contributors: wpcodefactory, algoritmika, anbinder
 Tags: woocommerce, checkout, core, field, woo commerce
 Requires at least: 4.4
 Tested up to: 6.1
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Customize core (i.e. standard) WooCommerce checkout fields.
+Customize the core (i.e. standard) WooCommerce checkout fields.
 
 == Description ==
 
-**Core Checkout Fields for WooCommerce** plugin lets you customize core (i.e. standard) WooCommerce checkout fields.
+The **Core Checkout Fields for WooCommerce** plugin lets you customize the core (i.e. standard) WooCommerce checkout fields.
 
-= Fields =
+### &#9989; Fields ###
 
 * Billing country
 * Billing first name
@@ -40,7 +40,7 @@ Customize core (i.e. standard) WooCommerce checkout fields.
 * Account password 2
 * Order comments
 
-= Fields Options =
+### &#9989; Fields Options ###
 
 * **Disable/enable** the field.
 * Set if field is **required**.
@@ -49,14 +49,14 @@ Customize core (i.e. standard) WooCommerce checkout fields.
 * Set field's **description**.
 * Change field's **style**.
 
-= Premium Version =
+### &#127942; Premium Version ###
 
-With [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/core-checkout-fields-for-woocommerce/) version you can also:
+With the [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/core-checkout-fields-for-woocommerce/) version you can also:
 
 * Change field's **position** (i.e. priority).
 * Set field's **product visibility**: hide/show field depending on which products (categories and/or tags) are in the cart.
 
-= Feedback =
+### &#128472; Feedback ###
 
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
 * [Visit plugin site](https://wpfactory.com/item/core-checkout-fields-for-woocommerce/).
@@ -69,7 +69,10 @@ With [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/core-
 
 == Changelog ==
 
-= 1.2.0 - 11/11/2022 =
+= 1.2.0 - 18/11/2022 =
+* Dev - Now the plugin is initialized on the `plugins_loaded` action.
+* Dev - Localisation - The `load_plugin_textdomain()` function call moved to the `init` action.
+* Dev - Code refactoring.
 * Tested up to: 6.1.
 * WC tested up to: 7.1.
 * Readme.txt updated.

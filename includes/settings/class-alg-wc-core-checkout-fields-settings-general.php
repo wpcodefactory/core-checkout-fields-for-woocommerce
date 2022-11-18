@@ -1,13 +1,14 @@
 <?php
 /**
- * Core Checkout Fields for WooCommerce - General Section Settings
+ * Core Checkout Fields for WooCommerce - Settings - General Section
  *
  * @version 1.1.0
  * @since   1.0.0
+ *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Core_Checkout_Fields_Settings_General' ) ) :
 
