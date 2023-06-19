@@ -3,12 +3,12 @@
 Plugin Name: Core Checkout Fields for WooCommerce
 Plugin URI: https://wpfactory.com/item/core-checkout-fields-for-woocommerce/
 Description: Customize the core (i.e. standard) WooCommerce checkout fields.
-Version: 1.2.0
+Version: 1.2.1
 Author: WPFactory
 Author URI: https://wpfactory.com
 Text Domain: core-checkout-fields-for-woocommerce
 Domain Path: /langs
-WC tested up to: 7.1
+WC tested up to: 7.8
 */
 
 defined( 'ABSPATH' ) || exit;
@@ -29,7 +29,7 @@ if ( 'core-checkout-fields-for-woocommerce.php' === basename( __FILE__ ) ) {
 	}
 }
 
-defined( 'ALG_WC_CORE_CHECKOUT_FIELDS_VERSION' ) || define( 'ALG_WC_CORE_CHECKOUT_FIELDS_VERSION', '1.2.0' );
+defined( 'ALG_WC_CORE_CHECKOUT_FIELDS_VERSION' ) || define( 'ALG_WC_CORE_CHECKOUT_FIELDS_VERSION', '1.2.1' );
 
 defined( 'ALG_WC_CORE_CHECKOUT_FIELDS_FILE' ) || define( 'ALG_WC_CORE_CHECKOUT_FIELDS_FILE', __FILE__ );
 
