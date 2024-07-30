@@ -1,331 +1,348 @@
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:45
+# Copyright (C) 2024 WPFactory
+# This file is distributed under the same license as the Checkout Field Editor and Customizer for WooCommerce Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: core-checkout-fields-for-woocommerce 1.2.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/core-checkout-fields-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-07-30T09:08:30+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: core-checkout-fields-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Checkout Field Editor and Customizer for WooCommerce Pro"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpfactory.com/item/core-checkout-fields-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Customize the core (i.e. standard) WooCommerce checkout fields."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPFactory"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpfactory.com"
+msgstr ""
+
+#: includes/class-alg-wc-core-checkout-fields-core.php:45
 msgid "Billing country"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:46
+#: includes/class-alg-wc-core-checkout-fields-core.php:46
 msgid "Billing first name"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:47
+#: includes/class-alg-wc-core-checkout-fields-core.php:47
 msgid "Billing last name"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:48
+#: includes/class-alg-wc-core-checkout-fields-core.php:48
 msgid "Billing company"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:49
+#: includes/class-alg-wc-core-checkout-fields-core.php:49
 msgid "Billing address"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:50
+#: includes/class-alg-wc-core-checkout-fields-core.php:50
 msgid "Billing address 2"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:51
+#: includes/class-alg-wc-core-checkout-fields-core.php:51
 msgid "Billing city"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:52
+#: includes/class-alg-wc-core-checkout-fields-core.php:52
 msgid "Billing state"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:53
+#: includes/class-alg-wc-core-checkout-fields-core.php:53
 msgid "Billing postcode"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:54
+#: includes/class-alg-wc-core-checkout-fields-core.php:54
 msgid "Billing email"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:55
+#: includes/class-alg-wc-core-checkout-fields-core.php:55
 msgid "Billing phone"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:56
+#: includes/class-alg-wc-core-checkout-fields-core.php:56
 msgid "Shipping country"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:57
+#: includes/class-alg-wc-core-checkout-fields-core.php:57
 msgid "Shipping first name"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:58
+#: includes/class-alg-wc-core-checkout-fields-core.php:58
 msgid "Shipping last name"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:59
+#: includes/class-alg-wc-core-checkout-fields-core.php:59
 msgid "Shipping company"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:60
+#: includes/class-alg-wc-core-checkout-fields-core.php:60
 msgid "Shipping address"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:61
+#: includes/class-alg-wc-core-checkout-fields-core.php:61
 msgid "Shipping address 2"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:62
+#: includes/class-alg-wc-core-checkout-fields-core.php:62
 msgid "Shipping city"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:63
+#: includes/class-alg-wc-core-checkout-fields-core.php:63
 msgid "Shipping state"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:64
+#: includes/class-alg-wc-core-checkout-fields-core.php:64
 msgid "Shipping postcode"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:65
+#: includes/class-alg-wc-core-checkout-fields-core.php:65
 msgid "Account username"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:66
+#: includes/class-alg-wc-core-checkout-fields-core.php:66
 msgid "Account password"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:67
+#: includes/class-alg-wc-core-checkout-fields-core.php:67
 msgid "Account password 2"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields-core.php:68
+#: includes/class-alg-wc-core-checkout-fields-core.php:68
 msgid "Order comments"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields.php:131
-msgid "Settings"
-msgstr ""
-
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\class-alg-wc-core-checkout-fields.php:134
+#: includes/class-alg-wc-core-checkout-fields.php:134
 msgid "Go Pro"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:79
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:86
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:79
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:86
 msgid "Enabled"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:85
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:97
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:130
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:85
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:97
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:130
 msgid "Default"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:87
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:87
 msgid "Disabled"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:91
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:98
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:91
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:98
 msgid "Required"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:99
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:99
 msgid "Not required"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:103
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:103
 msgid "Label"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:104
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:111
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:118
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:104
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:111
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:118
 msgid "Leave blank for WooCommerce defaults."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:110
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:110
 msgid "Placeholder"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:117
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:117
 msgid "Description"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:124
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:124
 msgid "Class"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:131
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:131
 msgid "Align left"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:132
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:132
 msgid "Align right"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:133
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:133
 msgid "Full row"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:137
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:137
 msgid "Position (i.e. priority)"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:138
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:138
 msgid "Leave zero for WooCommerce defaults."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:140
-#, php-format
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:140
 msgid "You will need %s plugin to set priority."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:142
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:163
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:177
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:191
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:205
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:142
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:163
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:177
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:191
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:205
 msgid "Core Checkout Fields for WooCommerce Pro"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:153
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:153
 msgid "Product Visibility"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:158
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:158
 msgid "Include product categories"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:159
-msgid ""
-"If not empty - selected categories products must be in the cart for current "
-"field to appear."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:159
+msgid "If not empty - selected categories products must be in the cart for current field to appear."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:161
-#, php-format
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:161
 msgid "You will need %s plugin to set included categories."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:172
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:172
 msgid "Exclude product categories"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:173
-msgid ""
-"If not empty - current field is hidden, if selected categories products are "
-"in the cart."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:173
+msgid "If not empty - current field is hidden, if selected categories products are in the cart."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:175
-#, php-format
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:175
 msgid "You will need %s plugin to set excluded categories."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:186
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:186
 msgid "Include product tags"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:187
-msgid ""
-"If not empty - selected tags products must be in the cart for current field "
-"to appear."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:187
+msgid "If not empty - selected tags products must be in the cart for current field to appear."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:189
-#, php-format
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:189
 msgid "You will need %s plugin to set included tags."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:200
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:200
 msgid "Exclude product tags"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:201
-msgid ""
-"If not empty - current field is hidden, if selected tags products are in the "
-"cart."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:201
+msgid "If not empty - current field is hidden, if selected tags products are in the cart."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-field.php:203
-#, php-format
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:203
 msgid "You will need %s plugin to set excluded tags."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:25
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:25
 msgid "General"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:39
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:39
 msgid "Core Checkout Fields Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:44
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:44
 msgid "Core WooCommerce Checkout Fields"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:45
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:45
 msgid "Enable plugin"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:46
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:46
 msgid "Customize WooCommerce core checkout fields."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:59
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:59
 msgid "General Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:64
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:64
 msgid "Override default address fields"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:70
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:82
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:70
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:82
 msgid "Override with billing fields"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:71
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:83
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:71
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:83
 msgid "Override with shipping fields"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:72
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:84
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:72
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:84
 msgid "Do not override"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:76
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:76
 msgid "Override country locale fields"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:88
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:88
 msgid "Force fields sort by priority"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:89
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:89
 msgid "Enable"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-core-checkout-fields-settings-general.php:90
-msgid ""
-"Enable this if you are having theme related issues with \"Position (i.e. "
-"priority)\" options."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:90
+msgid "Enable this if you are having theme related issues with \"Position (i.e. priority)\" options."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-settings-core-checkout-fields.php:25
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:25
 msgid "Core Checkout Fields"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-settings-core-checkout-fields.php:46
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:46
 msgid "Reset Settings"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-settings-core-checkout-fields.php:51
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:51
 msgid "Reset section settings"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-settings-core-checkout-fields.php:52
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:52
 msgid "Reset"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-settings-core-checkout-fields.php:53
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:53
 msgid "Check the box and save changes to reset."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\core-checkout-fields-for-woocommerce-pro\includes\settings\class-alg-wc-settings-core-checkout-fields.php:92
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:92
 msgid "Your settings have been reset."
 msgstr ""

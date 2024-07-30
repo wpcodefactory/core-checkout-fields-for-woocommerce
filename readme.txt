@@ -2,8 +2,8 @@
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
 Tags: woocommerce, checkout, core, field, woo commerce
 Requires at least: 4.4
-Tested up to: 6.4
-Stable tag: 1.2.3
+Tested up to: 6.5
+Stable tag: 1.2.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -68,6 +68,10 @@ With the [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/c
 3. Start by visiting plugin settings at "WooCommerce > Settings > Core Checkout Fields".
 
 == Changelog ==
+
+= 1.2.4 - 30/07/2024 =
+* WC tested up to: 9.1.
+* Tested up to: 6.5.
 
 = 1.2.3 - 20/11/2023 =
 * WC tested up to: 8.3.
