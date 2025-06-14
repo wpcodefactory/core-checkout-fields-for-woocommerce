@@ -2,7 +2,7 @@
 /**
  * Core Checkout Fields for WooCommerce - Main Class
  *
- * @version 1.2.0
+ * @version 2.0.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -23,13 +23,21 @@ final class Alg_WC_Core_Checkout_Fields {
 	public $version = ALG_WC_CORE_CHECKOUT_FIELDS_VERSION;
 
 	/**
+	 * core.
+	 *
+	 * @version 2.0.0
+	 * @since   2.0.0
+	 */
+	public $core;
+
+	/**
 	 * @var   Alg_WC_Core_Checkout_Fields The single instance of the class
 	 * @since 1.0.0
 	 */
 	protected static $_instance = null;
 
 	/**
-	 * Main Alg_WC_Core_Checkout_Fields Instance
+	 * Main Alg_WC_Core_Checkout_Fields Instance.
 	 *
 	 * Ensures only one instance of Alg_WC_Core_Checkout_Fields is loaded or can be loaded.
 	 *
@@ -49,7 +57,7 @@ final class Alg_WC_Core_Checkout_Fields {
 	/**
 	 * Alg_WC_Core_Checkout_Fields Constructor.
 	 *
-	 * @version 1.2.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
 	 * @access  public
@@ -64,9 +72,12 @@ final class Alg_WC_Core_Checkout_Fields {
 		// Set up localisation
 		add_action( 'init', array( $this, 'localize' ) );
 
+		// Declare compatibility with custom order tables for WooCommerce
+		add_action( 'before_woocommerce_init', array( $this, 'wc_declare_compatibility' ) );
+
 		// Pro
 		if ( 'core-checkout-fields-for-woocommerce-pro.php' === basename( ALG_WC_CORE_CHECKOUT_FIELDS_FILE ) ) {
-			require_once( 'pro/class-alg-wc-core-checkout-fields-pro.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'pro/class-alg-wc-core-checkout-fields-pro.php';
 		}
 
 		// Include required files
@@ -86,18 +97,47 @@ final class Alg_WC_Core_Checkout_Fields {
 	 * @since   1.2.0
 	 */
 	function localize() {
-		load_plugin_textdomain( 'core-checkout-fields-for-woocommerce', false, dirname( plugin_basename( ALG_WC_CORE_CHECKOUT_FIELDS_FILE ) ) . '/langs/' );
+		load_plugin_textdomain(
+			'core-checkout-fields-for-woocommerce',
+			false,
+			dirname( plugin_basename( ALG_WC_CORE_CHECKOUT_FIELDS_FILE ) ) . '/langs/'
+		);
+	}
+
+	/**
+	 * wc_declare_compatibility.
+	 *
+	 * @version 2.0.0
+	 * @since   2.0.0
+	 *
+	 * @see     https://developer.woocommerce.com/docs/hpos-extension-recipe-book/
+	 */
+	function wc_declare_compatibility() {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			$files = (
+				defined( 'ALG_WC_CORE_CHECKOUT_FIELDS_FILE_FREE' ) ?
+				array( ALG_WC_CORE_CHECKOUT_FIELDS_FILE, ALG_WC_CORE_CHECKOUT_FIELDS_FILE_FREE ) :
+				array( ALG_WC_CORE_CHECKOUT_FIELDS_FILE )
+			);
+			foreach ( $files as $file ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+					'custom_order_tables',
+					$file,
+					true
+				);
+			}
+		}
 	}
 
 	/**
 	 * Include required core files used in admin and on the frontend.
 	 *
-	 * @version 1.2.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function includes() {
 		// Core
-		$this->core = require_once( 'class-alg-wc-core-checkout-fields-core.php' );
+		$this->core = require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-core-checkout-fields-core.php';
 	}
 
 	/**
@@ -107,20 +147,24 @@ final class Alg_WC_Core_Checkout_Fields {
 	 * @since   1.1.0
 	 */
 	function admin() {
+
 		// Action links
 		add_filter( 'plugin_action_links_' . plugin_basename( ALG_WC_CORE_CHECKOUT_FIELDS_FILE ), array( $this, 'action_links' ) );
+
 		// Settings
 		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
+
 		// Version update
 		if ( get_option( 'alg_wc_core_checkout_fields_version', '' ) !== $this->version ) {
 			add_action( 'admin_init', array( $this, 'version_updated' ) );
 		}
+
 	}
 
 	/**
 	 * Show action links on the plugin screen.
 	 *
-	 * @version 1.2.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
 	 * @param   mixed $links
@@ -128,22 +172,22 @@ final class Alg_WC_Core_Checkout_Fields {
 	 */
 	function action_links( $links ) {
 		$custom_links = array();
-		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_core_checkout_fields' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
-		if ( 'core-checkout-fields-for-woocommerce.php' === basename( ALG_WC_CORE_CHECKOUT_FIELDS_FILE ) ) {
-			$custom_links[] = '<a target="_blank" style="font-weight: bold; color: green;" href="https://wpfactory.com/item/core-checkout-fields-for-woocommerce/">' .
-				__( 'Go Pro', 'core-checkout-fields-for-woocommerce' ) . '</a>';
-		}
+
+		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_core_checkout_fields' ) . '">' .
+			__( 'Settings', 'core-checkout-fields-for-woocommerce' ) .
+		'</a>';
+
 		return array_merge( $custom_links, $links );
 	}
 
 	/**
 	 * Add Core Checkout Fields settings tab to WooCommerce settings.
 	 *
-	 * @version 1.2.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function add_woocommerce_settings_tab( $settings ) {
-		$settings[] = require_once( 'settings/class-alg-wc-settings-core-checkout-fields.php' );
+		$settings[] = require_once plugin_dir_path( __FILE__ ) . 'settings/class-alg-wc-settings-core-checkout-fields.php';
 		return $settings;
 	}
 

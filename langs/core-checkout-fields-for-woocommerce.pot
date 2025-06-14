@@ -1,348 +1,309 @@
-# Copyright (C) 2024 WPFactory
-# This file is distributed under the same license as the Checkout Field Editor and Customizer for WooCommerce Pro plugin.
+# Copyright (C) 2025 Algoritmika Ltd
+# This file is distributed under the GNU General Public License v3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: core-checkout-fields-for-woocommerce 1.2.4\n"
+"Project-Id-Version: Checkout Field Editor and Customizer for WooCommerce 2.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/core-checkout-fields-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-30T09:08:30+02:00\n"
+"POT-Creation-Date: 2025-06-14T16:53:06+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: core-checkout-fields-for-woocommerce\n"
 
 #. Plugin Name of the plugin
-msgid "Checkout Field Editor and Customizer for WooCommerce Pro"
+#: core-checkout-fields-for-woocommerce.php
+msgid "Checkout Field Editor and Customizer for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://wpfactory.com/item/core-checkout-fields-for-woocommerce/"
+#: core-checkout-fields-for-woocommerce.php
+msgid "https://wordpress.org/plugins/core-checkout-fields-for-woocommerce/"
 msgstr ""
 
 #. Description of the plugin
-msgid "Customize the core (i.e. standard) WooCommerce checkout fields."
+#: core-checkout-fields-for-woocommerce.php
+msgid "Customize the core (i.e., standard) WooCommerce checkout fields."
 msgstr ""
 
 #. Author of the plugin
-msgid "WPFactory"
+#: core-checkout-fields-for-woocommerce.php
+msgid "Algoritmika Ltd"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://wpfactory.com"
+#: core-checkout-fields-for-woocommerce.php
+msgid "https://profiles.wordpress.org/algoritmika/"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:45
+#: includes/class-alg-wc-core-checkout-fields-core.php:99
 msgid "Billing country"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:46
+#: includes/class-alg-wc-core-checkout-fields-core.php:100
 msgid "Billing first name"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:47
+#: includes/class-alg-wc-core-checkout-fields-core.php:101
 msgid "Billing last name"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:48
+#: includes/class-alg-wc-core-checkout-fields-core.php:102
 msgid "Billing company"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:49
+#: includes/class-alg-wc-core-checkout-fields-core.php:103
 msgid "Billing address"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:50
+#: includes/class-alg-wc-core-checkout-fields-core.php:104
 msgid "Billing address 2"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:51
+#: includes/class-alg-wc-core-checkout-fields-core.php:105
 msgid "Billing city"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:52
+#: includes/class-alg-wc-core-checkout-fields-core.php:106
 msgid "Billing state"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:53
+#: includes/class-alg-wc-core-checkout-fields-core.php:107
 msgid "Billing postcode"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:54
+#: includes/class-alg-wc-core-checkout-fields-core.php:108
 msgid "Billing email"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:55
+#: includes/class-alg-wc-core-checkout-fields-core.php:109
 msgid "Billing phone"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:56
+#: includes/class-alg-wc-core-checkout-fields-core.php:110
 msgid "Shipping country"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:57
+#: includes/class-alg-wc-core-checkout-fields-core.php:111
 msgid "Shipping first name"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:58
+#: includes/class-alg-wc-core-checkout-fields-core.php:112
 msgid "Shipping last name"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:59
+#: includes/class-alg-wc-core-checkout-fields-core.php:113
 msgid "Shipping company"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:60
+#: includes/class-alg-wc-core-checkout-fields-core.php:114
 msgid "Shipping address"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:61
+#: includes/class-alg-wc-core-checkout-fields-core.php:115
 msgid "Shipping address 2"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:62
+#: includes/class-alg-wc-core-checkout-fields-core.php:116
 msgid "Shipping city"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:63
+#: includes/class-alg-wc-core-checkout-fields-core.php:117
 msgid "Shipping state"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:64
+#: includes/class-alg-wc-core-checkout-fields-core.php:118
 msgid "Shipping postcode"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:65
+#: includes/class-alg-wc-core-checkout-fields-core.php:119
 msgid "Account username"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:66
+#: includes/class-alg-wc-core-checkout-fields-core.php:120
 msgid "Account password"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:67
+#: includes/class-alg-wc-core-checkout-fields-core.php:121
 msgid "Account password 2"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields-core.php:68
+#: includes/class-alg-wc-core-checkout-fields-core.php:122
 msgid "Order comments"
 msgstr ""
 
-#: includes/class-alg-wc-core-checkout-fields.php:134
-msgid "Go Pro"
+#: includes/class-alg-wc-core-checkout-fields.php:177
+msgid "Settings"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:79
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:86
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:81
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:88
 msgid "Enabled"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:85
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:97
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:130
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:87
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:99
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:132
 msgid "Default"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:87
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:89
 msgid "Disabled"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:91
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:98
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:93
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:100
 msgid "Required"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:99
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:101
 msgid "Not required"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:103
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:105
 msgid "Label"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:104
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:111
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:118
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:106
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:113
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:120
 msgid "Leave blank for WooCommerce defaults."
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:110
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:112
 msgid "Placeholder"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:117
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:119
 msgid "Description"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:124
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:126
 msgid "Class"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:131
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:133
 msgid "Align left"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:132
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:134
 msgid "Align right"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:133
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:135
 msgid "Full row"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:137
-msgid "Position (i.e. priority)"
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:138
-msgid "Leave zero for WooCommerce defaults."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:139
+msgid "Position (i.e., priority)"
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:140
-msgid "You will need %s plugin to set priority."
+msgid "Leave zero for WooCommerce defaults."
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:142
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:163
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:177
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:191
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:205
-msgid "Core Checkout Fields for WooCommerce Pro"
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:153
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:150
 msgid "Product Visibility"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:158
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:155
 msgid "Include product categories"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:159
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:156
 msgid "If not empty - selected categories products must be in the cart for current field to appear."
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:161
-msgid "You will need %s plugin to set included categories."
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:172
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:164
 msgid "Exclude product categories"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:173
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:165
 msgid "If not empty - current field is hidden, if selected categories products are in the cart."
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:175
-msgid "You will need %s plugin to set excluded categories."
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:186
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:173
 msgid "Include product tags"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:187
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:174
 msgid "If not empty - selected tags products must be in the cart for current field to appear."
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:189
-msgid "You will need %s plugin to set included tags."
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:200
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:182
 msgid "Exclude product tags"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:201
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:183
 msgid "If not empty - current field is hidden, if selected tags products are in the cart."
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-field.php:203
-msgid "You will need %s plugin to set excluded tags."
 msgstr ""
 
 #: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:25
 msgid "General"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:39
-msgid "Core Checkout Fields Options"
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:44
-msgid "Core WooCommerce Checkout Fields"
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:45
-msgid "Enable plugin"
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:46
-msgid "Customize WooCommerce core checkout fields."
-msgstr ""
-
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:59
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:38
 msgid "General Options"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:64
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:43
 msgid "Override default address fields"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:70
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:82
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:49
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:61
 msgid "Override with billing fields"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:71
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:83
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:50
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:62
 msgid "Override with shipping fields"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:72
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:84
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:51
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:63
 msgid "Do not override"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:76
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:55
 msgid "Override country locale fields"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:88
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:67
 msgid "Force fields sort by priority"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:89
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:68
 msgid "Enable"
 msgstr ""
 
-#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:90
-msgid "Enable this if you are having theme related issues with \"Position (i.e. priority)\" options."
+#: includes/settings/class-alg-wc-core-checkout-fields-settings-general.php:69
+msgid "Enable this if you are having theme related issues with the \"Position (i.e., priority)\" options."
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:25
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:26
 msgid "Core Checkout Fields"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:46
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:51
 msgid "Reset Settings"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:51
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:56
 msgid "Reset section settings"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:52
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:57
 msgid "Reset"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:53
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:58
 msgid "Check the box and save changes to reset."
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:92
+#: includes/settings/class-alg-wc-settings-core-checkout-fields.php:98
 msgid "Your settings have been reset."
 msgstr ""

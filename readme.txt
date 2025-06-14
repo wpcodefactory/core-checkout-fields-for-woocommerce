@@ -1,19 +1,31 @@
 === Checkout Field Editor and Customizer for WooCommerce ===
-Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
+Contributors: algoritmika, thankstoit, anbinder, karzin
 Tags: woocommerce, checkout, core, field, woo commerce
 Requires at least: 4.4
-Tested up to: 6.5
-Stable tag: 1.2.4
+Tested up to: 6.8
+Stable tag: 2.0.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Customize the core (i.e. standard) WooCommerce checkout fields.
+Customize the core (i.e., standard) WooCommerce checkout fields.
 
 == Description ==
 
-The **Core Checkout Fields for WooCommerce** plugin lets you customize the core (i.e. standard) WooCommerce checkout fields.
+The **Checkout Field Editor and Customizer for WooCommerce** plugin lets you customize the core (i.e., standard) WooCommerce checkout fields.
 
-### &#9989; Fields ###
+Elevate your WooCommerce store's checkout process with the Checkout Field Editor and Customizer for WooCommerce plugin. Tailor the standard checkout fields and offer a more personalized and streamlined checkout experience for your customers.
+
+With this plugin, every detail in the billing and shipping sections can be meticulously crafted to suit your business requirements.
+
+Modify fields encompassing billing details such as first and last name, company name, address, and contact information; and similarly for the shipping section, with additional control over account details including username and password setups, and even order comments.
+
+Beyond just enabling or disabling fields, take charge by setting fields as required or optional, tweaking labels, adding placeholders, and descriptions to guide customers seamlessly through the checkout process.
+
+You can also adjust the style to ensure it aligns harmoniously with your site's aesthetics.
+
+Download Checkout Field Editor and Customizer for WooCommerce and embark on a journey towards a more customized, intuitive, and engaging checkout experience.
+
+### ✅ Fields ###
 
 * Billing country
 * Billing first name
@@ -40,7 +52,7 @@ The **Core Checkout Fields for WooCommerce** plugin lets you customize the core 
 * Account password 2
 * Order comments
 
-### &#9989; Fields Options ###
+### ✅ Fields Options ###
 
 * **Disable/enable** the field.
 * Set if field is **required**.
@@ -49,17 +61,14 @@ The **Core Checkout Fields for WooCommerce** plugin lets you customize the core 
 * Set field's **description**.
 * Change field's **style**.
 
-### &#127942; Premium Version ###
+### ℹ More ###
 
-With the [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/core-checkout-fields-for-woocommerce/) version you can also:
+* The plugin is **"High-Performance Order Storage (HPOS)"** compatible.
 
-* Change field's **position** (i.e. priority).
-* Set field's **product visibility**: hide/show field depending on which products (categories and/or tags) are in the cart.
-
-### &#128472; Feedback ###
+### 🗘 Feedback ###
 
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* [Visit plugin site](https://wpfactory.com/item/core-checkout-fields-for-woocommerce/).
+* Head to the plugin [GitHub Repository](https://github.com/thanks-to-it/core-checkout-fields-for-woocommerce) to find out how you can pitch in.
 
 == Installation ==
 
@@ -68,6 +77,16 @@ With the [Core Checkout Fields for WooCommerce Pro](https://wpfactory.com/item/c
 3. Start by visiting plugin settings at "WooCommerce > Settings > Core Checkout Fields".
 
 == Changelog ==
+
+= 2.0.0 - 14/06/2025 =
+* Dev - Field's position (i.e., priority) - Moved to the free plugin version.
+* Dev - Field's product visibility (hide/show field depending on which products (categories and/or tags) are in the cart) - Moved to the free plugin version.
+* Dev - Security - Output escaped.
+* Dev - "High-Performance Order Storage (HPOS)" compatibility.
+* Dev - PHP v8.2 compatibility (dynamic properties).
+* Dev - Code refactoring.
+* WC tested up to: 9.9.
+* Tested up to: 6.8.
 
 = 1.2.4 - 30/07/2024 =
 * WC tested up to: 9.1.

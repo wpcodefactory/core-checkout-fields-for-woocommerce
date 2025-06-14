@@ -2,12 +2,13 @@
 /**
  * Core Checkout Fields for WooCommerce - Field Settings
  *
- * @version 1.1.0
+ * @version 2.0.0
  * @since   1.0.0
+ *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Core_Checkout_Fields_Settings_Field' ) ) :
 
@@ -28,39 +29,40 @@ class Alg_WC_Core_Checkout_Fields_Settings_Field extends Alg_WC_Core_Checkout_Fi
 	/**
 	 * get_terms.
 	 *
-	 * @version 1.0.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function get_terms( $args ) {
+
 		if ( ! is_array( $args ) ) {
-			$_taxonomy = $args;
+			$taxonomy = $args;
 			$args = array(
-				'taxonomy'   => $_taxonomy,
+				'taxonomy'   => $taxonomy,
 				'orderby'    => 'name',
 				'hide_empty' => false,
 			);
 		}
+
 		global $wp_version;
 		if ( version_compare( $wp_version, '4.5.0', '>=' ) ) {
-			$_terms = get_terms( $args );
+			$terms = get_terms( $args );
 		} else {
-			$_taxonomy = $args['taxonomy'];
+			$taxonomy = $args['taxonomy'];
 			unset( $args['taxonomy'] );
-			$_terms = get_terms( $_taxonomy, $args );
+			$terms = get_terms( $taxonomy, $args ); // phpcs:ignore WordPress.WP.DeprecatedParameters.Get_termsParam2Found
 		}
-		$_terms_options = array();
-		if ( ! empty( $_terms ) && ! is_wp_error( $_terms ) ){
-			foreach ( $_terms as $_term ) {
-				$_terms_options[ $_term->term_id ] = $_term->name;
-			}
+
+		$terms_options = array();
+		if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+			$terms_options = wp_list_pluck( $terms, 'name', 'term_id' );
 		}
-		return $_terms_options;
+		return $terms_options;
 	}
 
 	/**
 	 * get_settings.
 	 *
-	 * @version 1.1.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function get_settings() {
@@ -69,7 +71,7 @@ class Alg_WC_Core_Checkout_Fields_Settings_Field extends Alg_WC_Core_Checkout_Fi
 		$product_tags = $this->get_terms( 'product_tag' );
 		$field        = $this->id;
 
-		$fields_settings = array(
+		return array(
 			array(
 				'title'    => $this->desc,
 				'type'     => 'title',
@@ -134,16 +136,11 @@ class Alg_WC_Core_Checkout_Fields_Settings_Field extends Alg_WC_Core_Checkout_Fi
 				),
 			),
 			array(
-				'title'    => __( 'Position (i.e. priority)', 'core-checkout-fields-for-woocommerce' ),
+				'title'    => __( 'Position (i.e., priority)', 'core-checkout-fields-for-woocommerce' ),
 				'desc_tip' => __( 'Leave zero for WooCommerce defaults.', 'core-checkout-fields-for-woocommerce' ),
-				'desc'     => apply_filters( 'alg_wc_core_checkout_fields_settings', sprintf(
-					'<br>' . __( 'You will need %s plugin to set priority.', 'core-checkout-fields-for-woocommerce' ),
-					'<a target="_blank" href="https://wpfactory.com/item/core-checkout-fields-for-woocommerce/">' .
-						__( 'Core Checkout Fields for WooCommerce Pro', 'core-checkout-fields-for-woocommerce' ) . '</a>' ) ),
 				'id'       => "alg_wc_core_checkout_field_priority[{$field}]",
 				'default'  => 0,
 				'type'     => 'number',
-				'custom_attributes' => apply_filters( 'alg_wc_core_checkout_fields_settings', array( 'readonly' => 'readonly' ) ),
 			),
 			array(
 				'type'     => 'sectionend',
@@ -157,58 +154,38 @@ class Alg_WC_Core_Checkout_Fields_Settings_Field extends Alg_WC_Core_Checkout_Fi
 			array(
 				'title'    => __( 'Include product categories', 'core-checkout-fields-for-woocommerce' ),
 				'desc_tip' => __( 'If not empty - selected categories products must be in the cart for current field to appear.', 'core-checkout-fields-for-woocommerce' ),
-				'desc'     => apply_filters( 'alg_wc_core_checkout_fields_settings', sprintf(
-					'<br>' . __( 'You will need %s plugin to set included categories.', 'core-checkout-fields-for-woocommerce' ),
-					'<a target="_blank" href="https://wpfactory.com/item/core-checkout-fields-for-woocommerce/">' .
-						__( 'Core Checkout Fields for WooCommerce Pro', 'core-checkout-fields-for-woocommerce' ) . '</a>' ) ),
 				'id'       => "alg_wc_core_checkout_field_cats_incl[{$field}]",
 				'default'  => '',
 				'type'     => 'multiselect',
 				'class'    => 'chosen_select',
 				'options'  => $product_cats,
-				'custom_attributes' => apply_filters( 'alg_wc_core_checkout_fields_settings', array( 'disabled' => 'disabled' ) ),
 			),
 			array(
 				'title'    => __( 'Exclude product categories', 'core-checkout-fields-for-woocommerce' ),
 				'desc_tip' => __( 'If not empty - current field is hidden, if selected categories products are in the cart.', 'core-checkout-fields-for-woocommerce' ),
-				'desc'     => apply_filters( 'alg_wc_core_checkout_fields_settings', sprintf(
-					'<br>' . __( 'You will need %s plugin to set excluded categories.', 'core-checkout-fields-for-woocommerce' ),
-					'<a target="_blank" href="https://wpfactory.com/item/core-checkout-fields-for-woocommerce/">' .
-						__( 'Core Checkout Fields for WooCommerce Pro', 'core-checkout-fields-for-woocommerce' ) . '</a>' ) ),
 				'id'       => "alg_wc_core_checkout_field_cats_excl[{$field}]",
 				'default'  => '',
 				'type'     => 'multiselect',
 				'class'    => 'chosen_select',
 				'options'  => $product_cats,
-				'custom_attributes' => apply_filters( 'alg_wc_core_checkout_fields_settings', array( 'disabled' => 'disabled' ) ),
 			),
 			array(
 				'title'    => __( 'Include product tags', 'core-checkout-fields-for-woocommerce' ),
 				'desc_tip' => __( 'If not empty - selected tags products must be in the cart for current field to appear.', 'core-checkout-fields-for-woocommerce' ),
-				'desc'     => apply_filters( 'alg_wc_core_checkout_fields_settings', sprintf(
-					'<br>' . __( 'You will need %s plugin to set included tags.', 'core-checkout-fields-for-woocommerce' ),
-					'<a target="_blank" href="https://wpfactory.com/item/core-checkout-fields-for-woocommerce/">' .
-						__( 'Core Checkout Fields for WooCommerce Pro', 'core-checkout-fields-for-woocommerce' ) . '</a>' ) ),
 				'id'       => "alg_wc_core_checkout_field_tags_incl[{$field}]",
 				'default'  => '',
 				'type'     => 'multiselect',
 				'class'    => 'chosen_select',
 				'options'  => $product_tags,
-				'custom_attributes' => apply_filters( 'alg_wc_core_checkout_fields_settings', array( 'disabled' => 'disabled' ) ),
 			),
 			array(
 				'title'    => __( 'Exclude product tags', 'core-checkout-fields-for-woocommerce' ),
 				'desc_tip' => __( 'If not empty - current field is hidden, if selected tags products are in the cart.', 'core-checkout-fields-for-woocommerce' ),
-				'desc'     => apply_filters( 'alg_wc_core_checkout_fields_settings', sprintf(
-					'<br>' . __( 'You will need %s plugin to set excluded tags.', 'core-checkout-fields-for-woocommerce' ),
-					'<a target="_blank" href="https://wpfactory.com/item/core-checkout-fields-for-woocommerce/">' .
-						__( 'Core Checkout Fields for WooCommerce Pro', 'core-checkout-fields-for-woocommerce' ) . '</a>' ) ),
 				'id'       => "alg_wc_core_checkout_field_tags_excl[{$field}]",
 				'default'  => '',
 				'type'     => 'multiselect',
 				'class'    => 'chosen_select',
 				'options'  => $product_tags,
-				'custom_attributes' => apply_filters( 'alg_wc_core_checkout_fields_settings', array( 'disabled' => 'disabled' ) ),
 			),
 			array(
 				'type'     => 'sectionend',
@@ -216,7 +193,6 @@ class Alg_WC_Core_Checkout_Fields_Settings_Field extends Alg_WC_Core_Checkout_Fi
 			),
 		);
 
-		return array_merge( $fields_settings );
 	}
 
 }

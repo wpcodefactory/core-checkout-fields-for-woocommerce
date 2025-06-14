@@ -2,7 +2,7 @@
 /**
  * Core Checkout Fields for WooCommerce - Settings - General Section
  *
- * @version 1.1.0
+ * @version 2.0.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -29,32 +29,11 @@ class Alg_WC_Core_Checkout_Fields_Settings_General extends Alg_WC_Core_Checkout_
 	/**
 	 * get_settings.
 	 *
-	 * @version 1.1.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function get_settings() {
-
-		$plugin_settings = array(
-			array(
-				'title'    => __( 'Core Checkout Fields Options', 'core-checkout-fields-for-woocommerce' ),
-				'type'     => 'title',
-				'id'       => 'alg_wc_core_checkout_fields_plugin_options',
-			),
-			array(
-				'title'    => __( 'Core WooCommerce Checkout Fields', 'core-checkout-fields-for-woocommerce' ),
-				'desc'     => '<strong>' . __( 'Enable plugin', 'core-checkout-fields-for-woocommerce' ) . '</strong>',
-				'desc_tip' => __( 'Customize WooCommerce core checkout fields.', 'core-checkout-fields-for-woocommerce' ),
-				'id'       => 'alg_wc_core_checkout_fields_plugin_enabled',
-				'default'  => 'yes',
-				'type'     => 'checkbox',
-			),
-			array(
-				'type'     => 'sectionend',
-				'id'       => 'alg_wc_core_checkout_fields_plugin_options',
-			),
-		);
-
-		$general_settings = array(
+		return array(
 			array(
 				'title'    => __( 'General Options', 'core-checkout-fields-for-woocommerce' ),
 				'type'     => 'title',
@@ -87,7 +66,7 @@ class Alg_WC_Core_Checkout_Fields_Settings_General extends Alg_WC_Core_Checkout_
 			array(
 				'title'    => __( 'Force fields sort by priority', 'core-checkout-fields-for-woocommerce' ),
 				'desc'     => __( 'Enable', 'core-checkout-fields-for-woocommerce' ),
-				'desc_tip' => __( 'Enable this if you are having theme related issues with "Position (i.e. priority)" options.', 'core-checkout-fields-for-woocommerce' ),
+				'desc_tip' => __( 'Enable this if you are having theme related issues with the "Position (i.e., priority)" options.', 'core-checkout-fields-for-woocommerce' ),
 				'type'     => 'checkbox',
 				'id'       => 'alg_wc_core_checkout_fields_force_sort_by_priority',
 				'default'  => 'no',
@@ -97,8 +76,6 @@ class Alg_WC_Core_Checkout_Fields_Settings_General extends Alg_WC_Core_Checkout_
 				'id'       => 'alg_wc_core_checkout_fields_general_options',
 			),
 		);
-
-		return array_merge( $plugin_settings, $general_settings );
 	}
 
 }
